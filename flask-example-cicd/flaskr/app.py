@@ -45,7 +45,5 @@ def primes(count=None):
 def database():
     conn = db.db_connection()
     cur = conn.cursor()
-    cur.execute('SELECT * FROM animals;')
-    animals = cur.fetchall()
     conn.close()
     return {"database connection": "successful" }
