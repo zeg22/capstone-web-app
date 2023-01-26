@@ -10,5 +10,8 @@ ENV FLASK_APP=flaskr.app
 ENV FLASK_ENV=stage
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_RUN_PORT=8080
+ENV DB_IP=$db_ip
+ENV DB_USERNAME=$db_username
+ENV DB_PASSWORD=$db_password
 EXPOSE 8080
 CMD ["flask","run"]
